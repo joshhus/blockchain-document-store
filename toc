@@ -1,0 +1,49 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="blockchain-document-store" audience="service" href="/docs/services/blockchain-document-store/getting-started.html"}
+Blockchain Document Store
+
+    {: .navgroup id="learn"}
+    getting-started.md
+    service-overview.md
+    glossary.md
+    whats-new.md
+    release-notes.md
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    {: .topicgroup}
+    Provision the service
+        configure-service.md
+        authorize-service.md
+        install-instantiate-service.md
+        configure-json-example.md
+
+    {: .topicgroup}
+    Consume the service
+        register-entities.md
+        manage-users.md
+        manage-documents.md
+
+    {: .topicgroup}
+    Use the APIs
+        docstore-api.md
+        solution-manager-api.md
+        solution-manager-acls.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    [Blockchain Document Store API](https://stage.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){: new_window}
+    [Blockchain Solution Manager API](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/onboarding/swagger/#/){: new_window}
+    [Cloud Service Dashboard](https://console.bluemix.net/dashboard/apps){: new_window}
+    [Blockchain Document Store Plan](https://console.stage1.bluemix.net/catalog/services/blockchain-document-store){: new_window}
+    [Blockchain Platform Plan](https://console.bluemix.net/catalog/services/blockchain){: new_window}
+    [Blockchain Platform Docs](https://console.bluemix.net/docs/services/blockchain/index.html){: new_window}
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    FAQ.md
+    troubleshooting.md
+    ref-solution-manager-acls.md
+    {: .navgroup-end}
