@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-05-18"
+lastupdated: "2018-10-29"
 
 ---
 
@@ -14,14 +14,14 @@ lastupdated: "2018-05-18"
 
 
 # Blockchain Document Store API
-The [Blockchain Document Store API ![External link icon](images/launch-glyph.svg "External link icon")](https://stage.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window},
-for managing documents on a blockchain network, is shown below in Figure 1. In the [Swagger API ![External link icon](images/launch-glyph.svg "External link icon")](https://stage.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window} interface,
+The [Blockchain Document Store API ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window},
+for managing documents on a blockchain network, is shown below in Figure 1. In the [Swagger API ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window} interface,
 enter your **Onboarding Token** (Bearer &lt;token&gt;) in the upper right to authenticate to the service.
 Click any **Expand Operations** link to view the details for
 each endpoint, including **Model**, **Model Schema**, **Parameters** and **Response Messages**.
 
 Descriptions of the Blockchain Document Store [API endpoints](#api-endpoints) are provided below. To manually
-call an endopoint, use the [Swagger interface ![External link icon](images/launch-glyph.svg "External link icon")](https://stage.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window}.
+call an endpoint, use the [Swagger interface ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window}.
 
 **Attention**: Calling a Blockchain Document Store API endpoint requires submitting the *channel_id*
 for the user's member organization; the *channel_id* authorizes user actions to be recorded on the channel
@@ -33,10 +33,10 @@ ledger.
 
 ## API endpoints
 Brief descriptions of the Blockchain Document Store API endpoints are provided below. To manage documents, call
-the applicable [Blockchain Document Store API ![External link icon](images/launch-glyph.svg "External link icon")](https://stage.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window}
+the applicable [Blockchain Document Store API ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window}
 endpoint (in the Swagger API interface, click **Expand Operations**).
 
-### [Access Log ![External link icon](images/launch-glyph.svg "External link icon")](https://stage.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html#/Access_LogAccess){:new_window}
+### Access Log
 <dl>
 <dt> get /v1/docstores/{channel_id}/documents/{doc_id}/access_log</dt>
 <dd>Returns the document access log (in JSON) for the specified *doc_id*.</dd>
