@@ -45,5 +45,4 @@ Blockchain Document Store
     {: .navgroup id="help"}
     FAQ.md
     troubleshooting.md
-    ref-solution-manager-acls.md
     {: .navgroup-end}

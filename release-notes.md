@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-08"
+lastupdated: "2018-09-06"
 
 ---
 
@@ -16,9 +16,9 @@ lastupdated: "2018-03-08"
 
 **Service name** - Blockchain Document Store
 
-**Service release level** - Beta
+**Service release level** - Limited GA
 
-**Subscribing to Beta** - [Purchase Service](https://console.stage1.bluemix.net/catalog/services/blockchain-document-store){: new_window}
+**Subscribe** - [Purchase Service](https://console.stage1.bluemix.net/catalog/services/blockchain-document-store){: new_window}
 
 **Service description** - The Blockchain Document Store service is an IBM SaaS
 offering on IBM Cloud.
