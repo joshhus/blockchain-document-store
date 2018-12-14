@@ -19,23 +19,35 @@ Before contacting Blockchain Document Store support, you can search the
 FAQs below. You can also review the [Troubleshooting](troubleshooting.md)
 information, which includes error messages and corrective actions.
 
+FAQs: [APIs](APIs) | [Tokens](Tokens) |
+
 ----------
 
-**APIs**: What **APIs** are available for me to interact with the service and network?
+## APIs
 
-To initiate, join or manage an IBM Blockchain Solution on IBM Cloud (various levels of
+**Q:** What **APIs** are available for me to interact with the service and network?
+
+**A:** To initiate, join or manage an IBM Blockchain Solution on IBM Cloud (various levels of
 administrator access required):
 [Blockchain Solution Manager API ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/onboarding/swagger/#/){:new_window}.
 
-To manage documents with Blockchain Document Store:
+**A:** To manage documents with Blockchain Document Store:
 [Blockchain Document Store API ![External link icon](images/launch-glyph.svg "External link icon")](https://stage.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html.){:new_window}.
+
+----------
+
+## Tokens
+
+**Q:** How do I exchange a Cloud IAM token for a service Onboarding token?
+
+**A:** 
 
 ----------
 
 **Users**: How do I add a new user to an instance of Blockchain Document Store?
 
 **Add a human user**: Log in, with **Organization Administrator** access, to the
-applicable solution and channel. Then initiate a PUT call to the **/v1/organizations/{organizationId}/users** endpoint,
+applicable solution<!-- and channel -->. Then initiate a PUT call to the **/v1/organizations/{organizationId}/users** endpoint,
 at https://dev.pbsa-dev1.us-south.containers.mybluemix.net/onboarding/swagger/#/Users.
 
 **Add a system user**: Log in, with **Organization Administrator** access, to the

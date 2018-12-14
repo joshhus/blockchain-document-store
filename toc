@@ -1,48 +1,58 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="blockchain-document-store" audience="service" href="/docs/services/blockchain-document-store/getting-started.html"}
+{: .toc subcollection="blockchain-document-store" audience="service" href="/docs/services/blockchain-document-store/getting-started.html" path="services/blockchain-document-store"}
 Blockchain Document Store
 
     {: .navgroup id="learn"}
     getting-started.md
     service-overview.md
-    glossary.md
-    whats-new.md
-    release-notes.md
+
+    {: .topicgroup}
+    Learn more
+        whats-new.md
+        solutions.md
+        release-notes.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Provision the service
+    Connect to a member
         configure-service.md
         authorize-service.md
-        install-instantiate-service.md
-        configure-json-example.md
+        install-instantiate.md
+
+   {: .topicgroup}
+    Connect an application
+        register-app.md
+        auth-app.md
 
     {: .topicgroup}
-    Consume the service
-        register-entities.md
-        manage-users.md
-        manage-documents.md
+    Connect a solution
+        register-solution.md
+        auth-user.md
+        auth-system.md
 
-    {: .topicgroup}
-    Use the APIs
-        docstore-api.md
-        solution-manager-api.md
-        solution-manager-acls.md
+    manage-documents.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [Blockchain Document Store API](https://stage.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){: new_window}
-    [Blockchain Solution Manager API](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/onboarding/swagger/#/){: new_window}
+    {: .topicgroup}
+    Service plans
+        [Blockchain Document Store Plan](https://console.stage1.bluemix.net/catalog/services/blockchain-document-store){: new_window}
+        [IBM Blockchain Platform Plan](https://console.bluemix.net/catalog/services/blockchain){: new_window}
+
+    {: .topicgroup}
+    APIs
+        [Blockchain Document Store API](https://stage.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){: new_window}
+        [Blockchain Solution Manager API](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/onboarding/swagger/#/){: new_window}
+        solution-manager-acls.md
+
     [Cloud Service Dashboard](https://console.bluemix.net/dashboard/apps){: new_window}
-    [Blockchain Document Store Plan](https://console.stage1.bluemix.net/catalog/services/blockchain-document-store){: new_window}
-    [Blockchain Platform Plan](https://console.bluemix.net/catalog/services/blockchain){: new_window}
-    [Blockchain Platform Docs](https://console.bluemix.net/docs/services/blockchain/index.html){: new_window}
+
+    [IBM Blockchain Platform Docs](https://console.bluemix.net/docs/services/blockchain/index.html){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    FAQ.md
     troubleshooting.md
     {: .navgroup-end}

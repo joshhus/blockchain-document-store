@@ -149,4 +149,4 @@ a problem with the connection to the blockchain network.
 **Action**: Check for connectivity issues:
 1. Check the client connection to your IBM Blockchain network.
 2. Check the client connection to the IBM Blockchain Document Store solution manager.
-3. If the problem persists, contact IBM Blockchain Document Store support.
+3. If the problem persists, contact [IBM Blockchain Document Store support](support.md).

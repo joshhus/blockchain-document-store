@@ -119,12 +119,12 @@ private and confidential transactions between channel peers.
 
 ## IBM Blockchain Network and Security terms
 
+{: #bearertoken}
 **Bearer token** - An HTTP authentication security token that
 grants access to the bearer of the token. When the bearer of the token sends a
 request to a network resource, they must include the bearer token in the
 Authorization header of an API call: 'Authorization: Bearer &lt;token&gt;'.
 For details, see [Swagger Bearer Authentication ![External link icon](images/launch-glyph.svg "External link icon")](https://swagger.io/docs/specification/authentication/bearer-authentication/){:new_window}.
-
 
 {: #jwks}
 **JWKS** - A JSON Web Key Set (JWKS) contains the public keys used to verify any
@@ -135,7 +135,8 @@ icon")](https://auth0.com/docs/jwks){:new_window}.
 **OAuth 2.0** - OAuth 2.0 is the IBM Blockchain Solutions protocol for providing
 application and service authentication and authorization to users, systems and
 applications. Authentication for human users is a valid email address and
-password; authentication for systems is a serviceId and an APIkey. For details see
+password combination; authentication for systems is a Service ID and API key
+combination. For details, see
 the [OAuth 2.0 ![External link icon](images/launch-glyph.svg "External link icon")](https://oauth.net/2/){:new_window} specification.
 
 **Password Grant** - The password grant type is used when an application exchanges

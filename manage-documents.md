@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-29"
+lastupdated: "2018-12-07"
 
 ---
 
@@ -14,86 +14,83 @@ lastupdated: "2018-10-29"
 
 
 # Manage documents
-The Blockchain Document Store service supports the following document management
-tasks: upload, download, view, share, verify and replace. The service supports
-two document types: **Files** and **JSON**. **Files** are digital documents
-in common formats, such as PDFs, text, JSON, spreadsheets, images and
-multimedia, uploaded to blockchain network object storage. In addition to being
-uploaded as files, **JavaScript Object Notation (JSON) documents** can also be uploaded
-directly to the blockchain ledger, in the body of an API call.
 
-**Attention**: Calling a Blockchain Document Store API requires submitting the *chaincode_id*
-for the user's member organization. The *chaincode_id* authorizes user actions to be
-recorded on the channel ledger.
+The **Blockchain Document Store** service enables organizations and their users
+to easily manage and share all classes of business documents on a blockchain network,
+such as purchase orders, advanced shipping notices, and multi-lateral contracts.
+Registered and authenticated users can upload, download, view, share, verify,
+delete, and replace documents in any format. Blockchain Document Store **files** are
+digital documents uploaded and stored in an object storage database, such as IBM
+Cloud Object Store. Documents in JSON format can additionally be uploaded and
+stored directly on the blockchain ledger.
 
-**Authority/Role**: Member Organization Registered User  
-**API overview documentation**: [Blockchain Document Store APIs](docstore-api.html)  
-**Swagger interface**: [Blockchain Document Store APIs ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window}.
+## Document management API
+The [Blockchain Document Store API ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window}
+is provided for all of your document management tasks. Click on any endpoint to view the
+the usage details, including the **Model**, **Model Schema**, **Parameters** and **Response Messages**.
 
 ## Upload documents
-The Blockchain Document Store service enables any authenticated user on a
-network channel to upload two types of documents: **Files** and **JSON**. The service
-uploads **Files** to IBM Cloud Object Storage for secure, permissioned access,
-by channel. File attributes, including document ID (*doc_id*), version (*doc_version*)
-and metadata, are written to the blockchain ledger as a transaction record,
-permanently linking them to the stored file. Any subsequent user action taken against
-a document is recorded on the channel ledger, as a new transaction.
+Any authenticated user can upload the two types of documents: **files** and **JSON**.
+**Files** are uploaded to an object store database, such as
+[IBM Cloud Object Storage ![External link icon](images/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/object-storage/solutions){:new_window}, for secure,
+permissioned access, by network channel. JSON documents are uploaded directly to the
+blockchain ledger. User-specified attributes for each file, such as metadata, document
+ID, and document version, are written to the blockchain ledger as a permanent transaction
+record. Any subsequent user action specifying an an uploaded document (File or JSON) is
+also recorded on the ledger, as a new transaction.
 
-To upload a **new document**, call an [Upload](docstore-api.html#Upload) **POST** endpoint; to
-**replace an uploaded document**, call an [Upload](docstore-api.html#Upload) **PUT** endpoint.
-Note that JSON documents can be uploaded either to the blockchain ledger, in the
-body of an API call, or to IBM Cloud Object Store, as a text file.
+To **upload a new document**, execute a **POST** call to an [Upload ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html#/Upload){:new_window} endpoint. To **replace a stored document**, execute a **PUT** call to an [Upload ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html#/Upload){:new_window} endpoint.
 
-## Download documents
-The Blockchain Document Store service enables any authenticated user on a network
-channel to download (and view) documents (Files and JSON) that have been uploaded to
-the channel by the service. Call [Download](docstore-api.html#download) endpoints to download
-documents (Files and JSON), by organization *chaincode_id* and document *doc_id*.
-
-## Share documents
-The Blockchain Document Store service enables any authenticated user on a network
-channel to share uploaded documents (Files and JSON) with another authenticated
-user on the channel. [Share](docstore-api.html#Share) endpoints create document URLs to send
-to other users on the channel documents, and download records of share actions,
-by organization *chaincode_id* and document *doc_id* and *doc_version*.
-
-## Verify documents
-The Blockchain Document Store service enables any authenticated user on a
-network channel to verify documents (Files and JSON) that have been uploaded
-using the service. To verify a document, the service compares two upload
-transactions, for the same file, on the blockchain ledger. [Verify](docstore-api.html#verify)
-endpoints perform an upload of the document being verified, and a compare the
-document *file* and *doc_id* values on the channel ledger. Alternatively, an
-authenticated user can upload a file as a new document, with a **receipt**,
-and the service compares the hash values on the ledger and returns the result.
-
-## Replace documents
-The Blockchain Document Store service uploads two types of documents: **Files**
-and **JSON**. To replace a document, you must call an [Upload](docstore-api.html#upload) **PUT**
-endpoint. (To upload **new documents**, call an [Upload](docstore-api.html#upload) **POST** endpoint.)
-The service uploads **Files** to IBM Cloud Object Storage for secure, permissioned
-access, by channel. File attributes, including document ID (*doc_id*),
-version (*doc_version*) and metadata, are written to the blockchain ledger as a
-transaction record, and permanently linked to the stored file. Any subsequent user
-action taken against an uploaded document (File or JSON) is recorded on the channel
-ledger as a new transaction.
-
-A JSON document can be uploaded to the blockchain ledger
-in the body of an API call, or uploaded to object store as text **File**. To
-replace JSON on the ledger, submit a **/json** API call with the same *doc_id* and
-new JSON content in the API body. To replace JSON that has been uploaded to
-object store as a text **File**, use the file replacement method.
+A JSON document can be uploaded to the blockchain ledger in the body of an API call,
+**OR** to IBM Cloud Object Store as text **File**. To replace JSON on the ledger, submit
+a **/json** API call with the same *doc_id* and new JSON content in the API body.
+To replace JSON that has been uploaded to object store as a text **File**, use the
+file replacement method.
 
 **Attention**: No data or files are ever overwritten or deleted from the blockchain ledger,
 or from object store. "Replacing" a document merely uploads a newer version of the
 document. The newer version of a File or JSON is added to the network, with
 the same *doc_id* and an incremented *doc_version*.
 
-## States
+## Download documents
+The Blockchain Document Store service enables any authenticated user on a network
+channel to download (and view) documents (Files and JSON) that have been both uploaded
+by the service and shared with the user's Organization. Call the Download API endpoints
+to download documents (Files and JSON), by *chaincode_id* and *doc_id*.
+
+To **download a document**, execute a **GET** call to a [Download ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html#/Download){:new_window} endpoint. To **download documents in bulk**, execute a **POST** call to a [Download ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html#/Download){:new_window} endpoint.
+
+## Search documents
+The Blockchain Document Store service enables any authenticated user on a network
+channel to search documents (JSON only) that have been both uploaded by the
+service and shared with the user's Organization. Call the Search API endpoint to
+search JSON documents, by *doc_type*, time range, JSON content, and *channel_id*.
+
+To **search a document**, execute a **POST** call to the [Search ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html#!/Search/searchUsingPOST){:new_window} endpoint.
+
+## Share documents
+The Blockchain Document Store service enables any authenticated user on a network
+channel to share uploaded documents (Files and JSON) with other authenticated
+users on the channel. Call a [Sharing ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html#/Sharing){:new_window} endpoint to create document URLs to share with other users on the channel, download
+shared documents, and download records of share actions, by *chaincode_id*, *doc_id*, and *doc_version*.
+
+## Verify documents
+The Blockchain Document Store service enables any authenticated user on a
+network channel to verify documents (Files and JSON) that have been uploaded
+using the service. To verify a document, the service compares two upload
+transactions, for the same file, on the blockchain ledger. Call the [Verification ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html#/Verification){:new_window} endpoints to perform an upload of the document being verified, and compare the
+document *file* and *doc_id* values on the channel ledger. Alternatively, an
+authenticated user can upload a file as a new document, with a **receipt**,
+and the service compares the hash values on the ledger and returns the result. In either case,
+the process verifies that your local copy matches the copy on the network.
+
+## Manage states
 The Blockchain Document Store service enables any authenticated user on the network
-channel to view the [States](docstore-api.html#states) of uploaded documents and pending document
+channel to view the states of uploaded documents and pending document
 transactions, and change (i.e. update) **user-defined** states only, of documents.
 **System-defined** states of documents cannot be explicitly changed by user actions.
+Call the [States ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html#/States){:new_window}
+endpoints to view and add document states.
 
 ## Additional API calls
 For additional Blockchain Document Store capabilities, call the following API
@@ -101,16 +98,3 @@ endpoints, at [Blockchain Document Store API ![External link icon](images/launch
 - Call [Access log](docstore-api.html)#access-log) endpoints to view document access records
 - Call [Documents)](docstore-api.html#documents) endpoints to search for specific documents
 - Call [Version](docstore-api.html#version) endpoints to view the history of document versions
-
-## Document management API
-The [Blockchain Document Store API ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window},
-for managing documents, is shown below in Figure 1. Once you are logged in to the API interface,
-click any **Expand Operations** link to view the details for each endpoint, including **Model**,
-**Model Schema**, **Parameters** and **Response Messages**.
-
-## API endpoints
-Use the Blockchain Document Store API endpoints to manage documents:
-
-- [API endpoints](solution-manager-api.html)
-- [Swagger API interface ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window}.
-To use an endpoint, click **Expand Operations**.
