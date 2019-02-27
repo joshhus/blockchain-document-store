@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-12-03"
+  years: 2019
+lastupdated: "2019-02-22"
 
 ---
 
@@ -26,15 +26,11 @@ Once you have met these prerequisites, you are ready to connect your
 **IBM Blockchain Document Store** instance to a network member organization,
 as follows:
 
-1. Create an instance of [Blockchain Document Store ![External link icon](images/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/blockchain-document-store){:new_window} for your organization. (One instance of the service is required per organization, per network channel.) Your new service instance will be listed on your [IBM Cloud Dashboard ![External link icon](images/launch-glyph.svg "External link icon")](https://console.bluemix.net/dashboard/apps){:new_window}.
+1. Create an instance of [Blockchain Document Store ![External link icon](images/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/blockchain-document-store){:new_window} for your organization. (One instance of the service is required per organization.) Your new service instance will be listed on your [IBM Cloud Dashboard ![External link icon](images/launch-glyph.svg "External link icon")](https://console.bluemix.net/dashboard/apps){:new_window}.
 
-2. [Configure the service](configure-service.html)
-
-3. [Authorize the service](authorize-service.html)
-
-4. [Install and instantiate the service](install-instantiate.html) (This step is done automatically for you.)
+2. [Configure the service](blockchain-document-store/configure-service.html)
 
 Once you have connected your **Blockchain Document Store** service instance to another member organization, you are ready to connect your applications and solutions to the service.
 
 ## What's next?
-[Connect an application to the service](register-app.html) or [connect a solution to the service](register-solution.html). 
+[Connect an application to the service](blockchain-document-store/register-app.html) or [connect a solution to the service](blockchain-document-store/register-solution.html).

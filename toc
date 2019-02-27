@@ -16,11 +16,7 @@ Blockchain Document Store
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    {: .topicgroup}
-    Connect to a member
-        configure-service.md
-        authorize-service.md
-        install-instantiate.md
+    configure-service.md
 
    {: .topicgroup}
     Connect an application
