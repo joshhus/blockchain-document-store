@@ -17,11 +17,7 @@ lastupdated: "2018-03-26"
 
 Before contacting IBM Blockchain Document Store support, you can search the
 error messages and resolutions below. You can also review the [FAQs](FAQ.md), and
-the API documentation:
-
-- [Blockchain Document Store APIs ![External link icon](images/launch-glyph.svg "External link icon")](https://stage.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window}
-- [Solution manager component APIs ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/onboarding/swagger/#/){:new_window}
-
+the API documentation.
 
 ## Error messages
 
@@ -44,8 +40,7 @@ of the message indicates the problem:
 - Incorrectly formatted JSON.
 - Other problem.
 
-**Action**: Review the [Blockchain Document Store API ![External link icon](images/launch-glyph.svg "External link icon")](https://stage.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){:new_window}:
-documentation for the required syntax, and resubmit the call.
+**Action**: Review the Blockchain Document Store API documentation for the required syntax, and resubmit the call.
 
 ----------
 
@@ -63,7 +58,7 @@ support uploading files with this body type.
 **Action**: Use Postman instead of Swagger to upload multiple documents:
 1. If necessary, download and configure Postman, from https://www.getpostman.com/.
 2. Select **POST** from the Postman dropdown menu.
-2. Enter the application URL; e.g. for the Swagger URL https://*app-url*/docstore/swagger-ui.html, specify the Postman URL https://*appurl*/docstore/v1/docstores/instance_id/&lt;*end_point*&gt;.
+2. Enter the application URL; e.g. for the Swagger URL https://*app-url*/docstore/swagger-ui.html, specify the Postman URL https://*appurl*/docstore/v1/docstores/instance_id/<*end_point*>.
 3. Select `form-data` as the body type.
 4. Add types and documents. Each document can be either a File or JSON.
 
@@ -128,7 +123,7 @@ the API expects a request body of type `form-data`, but the Swagger send type is
 **Action**: Use Postman instead of Swagger to verify JSON with a receipt:
 1. If necessary, download and configure Postman, from https://www.getpostman.com/.
 2. Select **POST** from the Postman dropdown menu.
-3. Enter the application URL; e.g. for the Swagger URL https://*app-url*/docstore/swagger-ui.html, specify the Postman URL  https://*appurl*/docstore/v1/docstores/instance_id/&lt;*end_point*&gt;.
+3. Enter the application URL; e.g. for the Swagger URL https://*app-url*/docstore/swagger-ui.html, specify the Postman URL  https://*appurl*/docstore/v1/docstores/instance_id/<*end_point*>.
 4. Select `form-data` as the body type.
 5. Add an Authorization header.
 6. Add the document receipt and json_content as key-value pairs in body.
@@ -149,4 +144,4 @@ a problem with the connection to the blockchain network.
 **Action**: Check for connectivity issues:
 1. Check the client connection to your IBM Blockchain network.
 2. Check the client connection to the IBM Blockchain Document Store solution manager.
-3. If the problem persists, contact [IBM Blockchain Document Store support](support.md).
+3. If the problem persists, contact [IBM Blockchain Document Store support](https://www.ibm.com/mysupport/s/topic/0TO500000001y2FGAQ/food-trust?language=en_US&productId=01t50000004XBJaAAO).

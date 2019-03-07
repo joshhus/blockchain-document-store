@@ -38,4 +38,4 @@ verification of the user identity is successful, and the human user can proceed 
 Blockchain Document Store service.
 
 ## What's next?
-Proceed to [Manage documents](manage-documents.html).
+Proceed to [Manage documents](blockchain-document-store/manage-documents.html).

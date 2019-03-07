@@ -38,11 +38,7 @@ Blockchain Document Store
         [Blockchain Document Store Plan](https://console.stage1.bluemix.net/catalog/services/blockchain-document-store){: new_window}
         [IBM Blockchain Platform Plan](https://console.bluemix.net/catalog/services/blockchain){: new_window}
 
-    {: .topicgroup}
-    APIs
-        [Blockchain Document Store API](https://stage.pbsa-dev1.us-south.containers.mybluemix.net/docstore/swagger-ui.html){: new_window}
-        [Blockchain Solution Manager API](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/onboarding/swagger/#/){: new_window}
-        solution-manager-acls.md
+    solution-manager-acls.md
 
     [Cloud Service Dashboard](https://console.bluemix.net/dashboard/apps){: new_window}
 

@@ -17,13 +17,13 @@ lastupdated: "2018-04-06"
 The **Blockchain Solution Manager** API ACLs (Table 1.) describe the role assignments
 that are authorized to call each endpoint. Calls are made by an authenticated and
 authorized user (human, system or application) submitting a request to the
-[Blockchain Solution Manager API ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/onboarding/swagger/#/Developer/){:new_window}.
+Blockchain Solution Manager API.
 
 ## ACLs by role
 Table 1 below lists the defined ACL roles that are authorized to call each
 Blockchain Solution Manager API endpoint. To access restricted endpoints, users
-must **Authorize** by clicking on a lock icon in the [API ![External link icon](images/launch-glyph.svg "External link icon")](https://dev.pbsa-dev1.us-south.containers.mybluemix.net/onboarding/swagger/#/Developer/){:new_window}.
-(Endpoints with no lock icon can be called by any registered user.)
+must **Authorize** by clicking on a lock icon in the API. (Endpoints with no lock
+icon can be called by any registered user.)
 
    **Table 1. Blockchain Solution Manager API Access Control (ACLs)**
 

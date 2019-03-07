@@ -95,4 +95,4 @@ Complete the following steps to register your solution with the **Blockchain Doc
 4. Submit the request via POST or Curl command.
 
 ## What's next?
-Proceed to [human user authentication](auth-user.html) or [system user authentication](auth-system.html).
+Proceed to [human user authentication]((blockchain-document-store/auth-user.html) or [system user authentication]((blockchain-document-store/auth-system.html).

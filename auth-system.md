@@ -38,4 +38,4 @@ verification of the identity is successful and the system user can proceed to us
 service.
 
 ## What's next?
-Proceed to [Manage documents](manage-documents.html).
+Proceed to [Manage documents](blockchain-document-store/manage-documents.html).

@@ -400,4 +400,4 @@ Purchase an IBM Blockchain service plan: [IBM Blockchain Enterprise Membership P
 
 ## What`s next
 After purchasing the service on IBM Cloud, start using IBM Blockchain Document Store,
-at [Getting Started](getting-started.html).
+at [Getting Started]((blockchain-document-store/getting-started.html).
