@@ -16,8 +16,7 @@ lastupdated: "2018-03-26"
 # Troubleshooting
 
 Before contacting IBM Blockchain Document Store support, you can search the
-error messages and resolutions below. You can also review the [FAQs](FAQ.md), and
-the API documentation.
+error messages and resolutions below. You can also review the API documentation.
 
 ## Error messages
 
