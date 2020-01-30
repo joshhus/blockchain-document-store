@@ -42,4 +42,4 @@ service, provides the following management functions for IBM Blockchain networks
 - System user authentication via IBM Cloud IAM.
 
 ## What's next?
-Once you have completed the [Getting started]((blockchain-document-store/getting-started.html) tutorial to meet the service prerequisites, proceed to [Configure the service]((blockchain-document-store/configure-service.html).
+Once you have completed the [Getting started](blockchain-document-store/getting-started.html) tutorial to meet the service prerequisites, proceed to [Configure the service](blockchain-document-store/configure-service.html).
